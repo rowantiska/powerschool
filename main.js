@@ -18,6 +18,7 @@ function getAvg(){
         },
       })
       .then(function (response) {
+        console.log(response.data)
         var pos = response.data.search('GPA')
         if(gpa != response.data.substring(pos, pos+17)){
             var oldGpa = gpa;
@@ -34,7 +35,7 @@ function getAvg(){
             }
 
             console.log("GPA Update: " +gpa +" ("+avg+")")
-            client.messages.create({body: "GPA Update: " +gpa +" ("+avg+")", from: '+18782176531', to: '+16319051235'})
+          //  client.messages.create({body: "GPA Update: " +gpa +" ("+avg+")", from: '+18782176531', to: '+16319051235'})
         }
         else if(gpa == response.data.substring(pos, pos+17)){
             console.log("No update -- ingnoring ("+gpa+")")
@@ -46,5 +47,5 @@ function getAvg(){
     setTimeout(function() {
         getAvg()
       if (--i) myLoop(i);
-    }, 1800)
+    }, 3000)
   })(10);  
