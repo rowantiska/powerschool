@@ -10,7 +10,7 @@ function getAvg(){
         url: 'https://westhamptonps.esboces.org/guardian/home.html',
         headers: {
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'Cookie': 'JSESSIONID=BA2C15AC3982BF8473655A3142D2D881; currentSchool=100; uiStateCont=null; lastHref=https%3A%2F%2Fwesthamptonps.esboces.org%2Fguardian%2Fhome.html; apt.uid=AP-HZBRHZVVCLAX-2-1664935630005-27469285.0.2.f4375d43-2ee8-497c-99d2-77269eebd707; uiStateNav=expanded; psaid=<-V2->894/6633659/1924278777OqgizrPbhvqx7b98770pPNXpgiYYQnny<-V2->; apt.sid=AP-HZBRHZVVCLAX-2-1664943227060-89647881',            
+            'Cookie': 'apt.uid=AP-HZBRHZVVCLAX-2-1664935630005-27469285.0.2.f4375d43-2ee8-497c-99d2-77269eebd707; JSESSIONID=8F4DF70AD7C9AE83E033741B23C3C801; psaid=<-V2->837/6636423/1924278777tqMbtyH76ARDfKcl71biDtTIlYPNYUPm<-V2->; currentSchool=100; uiStateCont=null; lastHref=https%3A%2F%2Fwesthamptonps.esboces.org%2Fguardian%2Fhome.html; apt.sid=AP-HZBRHZVVCLAX-2-1665102795382-24165743; uiStateNav=expanded',
             'Host': 'westhamptonps.esboces.org',
             'Origin': 'https://westhamptonps.esboces.org',
             'Referer': 'https://westhamptonps.esboces.org/public/home.html',
