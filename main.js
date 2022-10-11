@@ -5,7 +5,7 @@ const client = require('twilio')(accountSid, authToken);
 var gpa = "90.999";
 
 async function getAvg(){
-      for (counter=0; counter<0; counter++){
+      while(1>0){
        await sleep(120000)
       axios({
         method: 'GET',
