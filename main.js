@@ -41,10 +41,3 @@ function getAvg(){
         }
       })
 }
-
-(function myLoop(i) {
-    setTimeout(function() {
-        getAvg()
-      if (--i) myLoop(i);
-    }, 120000)
-  })(10);  
