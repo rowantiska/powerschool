@@ -34,7 +34,7 @@ function getAvg(){
             }
 
             console.log("GPA Update: " +gpa +" ("+avg+")")
-            client.messages.create({body: "GPA Update: " +gpa+" \n"+" ("+avg+")", from: '+18782176531', to: '+16319051235'})
+            client.messages.create({body: "GPA Update: " +gpa+" \n"+"("+avg+")", from: '+18782176531', to: '+16319051235'})
         }
         else if(gpa == response.data.substring(pos, pos+17)){
             console.log("No update -- ingnoring ("+gpa+")")
