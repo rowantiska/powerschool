@@ -27,14 +27,14 @@ function getAvg(){
             devi = devi*100;
 
             if(oldGpa > gpa){
-                var avg = devi.toString().substring(0,4) + "% decrease from "+oldGpa;
+                var avg = "Decrease from "+oldGpa;
             }
             else if(oldGpa < gpa){
-                var avg = devi.toString().substring(0,4) + "% increase from "+oldGpa;
+                var avg = "Increase from "+oldGpa;
             }
 
             console.log("GPA Update: " +gpa +" ("+avg+")")
-            client.messages.create({body: "GPA Update: " +gpa +" ("+avg+")", from: '+18782176531', to: '+16319051235'})
+            client.messages.create({body: "GPA Update: " +gpa\n\n +" ("+avg+")", from: '+18782176531', to: '+16319051235'})
         }
         else if(gpa == response.data.substring(pos, pos+17)){
             console.log("No update -- ingnoring ("+gpa+")")
