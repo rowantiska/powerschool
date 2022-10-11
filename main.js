@@ -4,7 +4,9 @@ const authToken = "b2cf9b901f6ca14e3cc586f81e20a752";
 const client = require('twilio')(accountSid, authToken);
 var gpa = "90.999";
 
-function getAvg(){
+async function getAvg(){
+      for (counter=0; counter<0; counter++){
+       await sleep(120000)
       axios({
         method: 'GET',
         url: 'https://westhamptonps.esboces.org/guardian/home.html',
@@ -40,4 +42,10 @@ function getAvg(){
             console.log("No update -- ingnoring ("+gpa+")")
         }
       })
+      }
+       function sleep(ms) {
+            return new Promise(resolve => {
+              setTimeout(resolve, ms)
+            })
+          }
 }
